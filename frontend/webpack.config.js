@@ -28,7 +28,15 @@ module.exports = {
                 use: [
                     { loader: 'style-loader' },
                     { loader: 'css-loader' },
-             }
+                ]
+            },
+
+            {
+                test: /.*\.(gif |png|jpe?g)$/i, // i representa case insensitive
+                use: {
+                    loader: 'file-loader'
+                }
+            }
 
         ]
     },
