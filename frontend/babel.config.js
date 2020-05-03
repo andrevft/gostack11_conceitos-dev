@@ -3,4 +3,7 @@ module.exports = {
         '@babel/preset-env',
         '@babel/preset-react' //permite escrever HTML dentro do JS
     ],
+    plugins: [
+        '@babel/plugin-transform-runtime'
+    ]
 };

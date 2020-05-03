@@ -5,9 +5,10 @@ const { uuid } = require('uuidv4');
 
 const app = express();
 
+app.use(cors()); //podemos definir no CORS qual o endereço do front-end com acesso permitido
 app.use(express.json());
 
-app.use(cors());
+
 
 
 const projects = [];
